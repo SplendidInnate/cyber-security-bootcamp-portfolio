@@ -1,0 +1,17 @@
+Question 1:
+
+Individuals can be victims of account take-over as cybercriminals will use the their login details like the passwords and usernames to gain access to their emails, social media accounts and online banking accounts.
+
+Individuals can suffer identity theft as their personal information like names, date of birth, home address/geographical location is exposed and can be used for fraudulent crime activities.
+
+Individuals using the same password across all their accounts can suffer more online damage as hackers will steal the information and try use the same details on other sites to break into more accounts.
+
+Individuals can be impersonated by hackers and use the individual email account for phishing scams, trick individual friends and family by asking money as if it is the individual whereas it is the hacker.
+
+Stolen data or information of the individual can be sold online by hackers.
+
+Question 2:
+
+Enabling a 2-factor authentication on all your accounts if supported.
+Create strong and unique passwords for each account in case one account is breached, then your other accounts will be safe as the login details or credentials are different from the breached account.
+Use a password manager, such as 1Password to generate and store unique, strong passwords for every account, so a breach in one site doesn't compromise others.
