@@ -1,0 +1,20 @@
+Practical Task 2:
+
+Question 1:
+
+The bank name and contact details are not mentioned on the email which is a sign of not being professional and legitimacy.
+
+The "fruad_servces@bank.com" is also another sign that this not a legit bank email account as it carries spelling mistakes which are intentionally done because another email account which might have the correct spelled words is already on use or been created before and legit banks would not commit such silly mistakes.
+
+The email starts with a "Hello" instead of addressing you in a professionally manner because since banks have your details recorded on their systems, they will address you by your title and surname.
+
+Question 2: 
+
+Yes, this is a automatic or activated type of malware. As the PDF file was open through a zip file, the malware installed and ran on the computer which leads to the computer being slow as the malware runs in the background and uses the computer system resources.
+
+Question 3:
+
+Phishing is a type of an email scam that tricks you into thinking that the email comes from a legit company, like your bank or other companies. Their goal is to install and run a malware into your computer device and often make you to give them your information and account details, like filling in an online form sent by the scammer to obtain your personal details. 
+Social engineering is when hackers or thieves exploit your emotions like using a sense of urgency, fear and sometimes by sounding helpful over an email or phone call to make you feel comfortable as you give your details to them. For example, getting a call from a scammer and they address a fake issue with any of your account and then offer to help you, as you fall in for the trap through trusting and hearing that they will offer help to solve the problem, you end up giving them all the details that they wanna extract from you.
+To avoid malware infections, when you receive an email, always check the sender's address and name of the company and check online if the business is legit, never open attachments from zip files or untrusted sources, do not panic or react quickly to any email as this might get your mind to not think before acting. Always verify by contacting the company or organization on the issue addressed by the email or go to the nearest branch of the company if you have the means of transport. Keep your computer software updated and have strong antivirus protection on your device. 
+
