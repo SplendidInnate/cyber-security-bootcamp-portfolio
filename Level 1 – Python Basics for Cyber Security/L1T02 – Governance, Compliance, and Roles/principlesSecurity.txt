@@ -1,0 +1,22 @@
+Practical Task
+
+Principle 1: Continuous cybersecurity education and empowerment.
+
+Conducting short training sessions that focus on recognizing threats in a health and blameless work environment to end the employee nervousness and fear. This principle helps to shift the focus from harsh actions to empowerment, making the stuff feel confident in interacting with each other to combat any other cyber threats and also know how to identify issues and understand the reason behind security rules.
+
+Principle 2: Phishing resistant identity and verification
+
+The principle is to make the employees not the primary line of defense and also helps the employees not have a hard time on identifying complex threats. Using phishing resistant multi-factor authentication such as biometrics for email access. And also, having an internal reporting mechanism where suspicious emails can be directed to a secure sandbox for automated analysis, giving employees a safe decision to take than assuming or guessing.
+
+Principle 3: Centralized system for logging and incident response
+
+This principle adopts the use of a cloud based security information and event management system. All the systems will send their log data to the central location and by outsourcing the monitoring of the log data to a managed detection and response service, we have effectively created a 24/7 cyber technician system which closes the gap on the lack of having a physical on-site technician.
+
+Principle 4: Lack of trust in access and expected breach
+
+No device should be trusted by default whether employees are working in a coffee shop, restaurant or in the office. Access to data must not be easy and will require a multi factor authentication and connections must be connected to a VPN to have a secure traffic that is encrypted and inspected. And also, operating under the assumptions that a breach has already occurred or will occur will help on building systems in advance before an actual attempt occurs so that it easy to prevent, as prevention is better than cure.
+
+Principle 5: Secure configuration and responsibility
+
+This principle aims to achieve the goal that all devices handling the company data must be secured. All computers whether it is a personal or work computer, must meet a minimum requirement of security including a firewall, an anti-malware software and encryption. The business will provide a self-service portal with security software for the employees to install on their personal and work computers.  
+
