@@ -1,0 +1,92 @@
+Practical Task:
+
+1.1
+
+Start
+    SET Largest TO 0
+    PRINT "Enter a positive number (0 to stop):"
+    READ Number
+
+    WHILE Number IS NOT 0 DO
+        IF Number > Largest THEN
+            SET Largest TO Number
+        END IF
+        Print "Enter next number (0 to stop):"
+        READ Number
+    End WHILE
+
+    Print "The largest number entered was: " + Largest
+Stop
+
+1.2
+
+Start
+Print "Enter name: " 
+READ UserInput
+
+SET first_name = UserInput
+Print "first_name" + "Hello, World"
+Stop
+
+1.3
+
+Start
+SET sum to 0
+SET count to 0
+
+While true:
+    Print "Enter an integer (or 'done' to finish):"
+    Read input
+    If input == "done":
+        Break
+    Else
+        Convert input to integer (handle errors if not integer)
+        sum = sum + integer
+        count = count + 1
+
+If count == 0
+    Output: "No integers entered."
+Else
+    average = sum / count
+    print "The arithmetic average is: " + average
+Stop
+
+1.4
+
+Start
+    CREATE List "GroceryItems"
+    Print "Enter products to buy and type done when finished:"
+    
+        READ Product
+        IF Product is not "done" THEN
+            ADD Product to GroceryItems
+        END IF
+    UNTIL Product == done
+
+    SORT GroceryItems alphabetically
+    
+    PRINT "Items left to buy:"
+    FOR EACH Item in GroceryItems DO
+        PRINT "Item"
+    END FOR
+Stop
+	
+1.5
+
+Start 
+
+Print "Enter X:"
+Read X
+Print "Enter Y: "
+Read Y
+
+S = X + Y
+A = S / 2
+P = X * Y
+
+Print "S"
+Print "A"
+Print "P"
+
+Stop
+
