@@ -18,10 +18,11 @@ if option == "investment":
     years = int(input("Enter the number of years you plan to invest: "))
     print("Would you like to invest in a ''simple'' or ''compound interest'': ")
     interest = input()
+    interest = interest.lower()
 
 #nested if-statemnet if user selects "simple" or "compound" interest option
     if interest == "simple": #simple
-        interest = interest.lower()
+        
         simple_interest = amount*(1+interest_rate*years)
         print(" ")
 
@@ -30,7 +31,6 @@ if option == "investment":
         print("Thank You.")
 
     if interest == "compound": #compound
-        interest = interest.lower()
         compound_interest = amount*math.pow((1+interest_rate),years)
         print(" ")
 
