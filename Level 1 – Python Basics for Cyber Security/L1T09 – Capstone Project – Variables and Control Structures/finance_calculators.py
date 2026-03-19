@@ -8,13 +8,13 @@ print(" ")
 
 #user input option
 option = input("Enter either ''investment'' or ''bond'' from the Menu above to proceed: ")
-#Converts user input to lowercase so capitalisation doesn't matter
 option = option.lower()
+#Converts user input to lowercase so capitalisation doesn't matter
 
 #if statement operation if user enters "investment"
 if option == "investment":
     amount = float(input("How much would you like to deposit: R"))
-    interest_rate = float(input("At what interest rate (Please enter only the number): "))
+    interest_rate = float(input("At what interest rate (Please enter only the number): "))/100
     years = int(input("Enter the number of years you plan to invest: "))
     print("Would you like to invest in a ''simple'' or ''compound interest'': ")
     interest = input()
@@ -43,7 +43,7 @@ elif option == "bond":
     value = float(input("Please enter the Present Value of the House: R"))
     interest_rate = float(input("Please enter the Interest Rate (only the integer): "))
     months_repayment = float(input("Please enter the Number of Months you would take to repay the bond: "))
-    repayment = (interest_rate*value)/(1-(1+interest_rate)**(-months_repayment))
+    repayment = ((interest_rate/100)/12*value)/(1-(1+(interest_rate/100)/12)**(-months_repayment))
     print(" ")
 
     #Displaying output
