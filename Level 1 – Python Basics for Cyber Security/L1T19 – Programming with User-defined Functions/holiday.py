@@ -1,19 +1,17 @@
 # Auto-Grade Task:
 
-# Variables & User inputs details
-city_flight = input("Hello, Where are you flying to: \nCape Town: R1 500\nDurban: R1 350\nPretoria: R900\nJohannesburg: R940\nCity: ")
-destination = city_flight
-num_nights = int(input("Number of nights you will be staying: "))
-rental_days = int(input("Number of days for which you will be renting the car: "))
+# ============= Holiday Total Calculation ===============
 
 # Hotel Cost Function
 def hotel_cost(num_nights): 
+    """ This function calculates accomodation price (R900 per night)"""
     accomodation = 900 * num_nights # Hotel Price Total logic calculation
     return accomodation
 
 # Plane Cost Function
 def plane_cost(city_flight):
-    city = city_flight.lower()
+    """ This function details flight price to the city chosen by user """
+    city_flight = city_flight.lower()
 
     if city_flight == "cape town":
         return 1500
@@ -32,13 +30,20 @@ def plane_cost(city_flight):
 
 # Car rental cost function 
 def car_rental(rental_days):
+    """ This function calculates car rental cost price (R400 per day) """
     rental_cost = 400 * rental_days
     return rental_cost
 
 # Holiday cost function
+"""" This function calculates the total price for holiday cost """
 def holiday_cost(num_nights, city_flight, rental_days):
     total = hotel_cost(num_nights) + plane_cost(city_flight) + car_rental(rental_days)
     return total
+
+# Variables & User inputs details
+city_flight = input("Hello, Where are you flying to: \nCape Town: R1 500\nDurban: R1 350\nPretoria: R900\nJohannesburg: R940\nCity: ")
+num_nights = int(input("Number of nights you will be staying: "))
+rental_days = int(input("Number of days for which you will be renting the car: "))
 
 # Calculation Variables
 hotel = hotel_cost(num_nights)
