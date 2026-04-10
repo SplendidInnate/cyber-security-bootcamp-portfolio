@@ -1,23 +1,16 @@
 # Practical Task:
 
 """
-This is a module docstring. A module docstring is used to provide a
-clear and concise description of the module's purpose, functionality,
-and usage.
+This module is for managing users and tasks.
 
-● Use the following username and password to access the admin rights 
-
-    username: admin
-    password: password
-
-● Ensure you open the whole folder for this task in VS Code otherwise
-the program will look in your root directory for the text files.
-
-NOTE: After refactoring this module, refactor this docstring to properly
-      reflect the purpose of this module.
-
-NOTE: After refactoring this module, refactor all comments to properly
-      reflect the purpose of the code they describe.
+It allows the user to:
+- register a new user
+- add a task
+- view all tasks
+- view their own tasks
+- edit or complete tasks
+- generate reports
+- display statistics
 
 """
 
@@ -72,10 +65,8 @@ for user in user_data:
     username_password[username] = password
 
 # Question 2: A helper function to save all tasks back into tasks.txt.
-# This function is used whenever a task is added, edited, or marked complete.
-
 def save_tasks():
-    """Save the current task list into tasks.txt."""
+    """This function saves the current task list into tasks.txt."""
     with open("tasks.txt", "w", encoding="utf-8") as task_file:
         task_lines = []
 
@@ -94,10 +85,9 @@ def save_tasks():
 
 # Question 2: Refactor the register-user code into a function called reg_user.
 # Question 3: Prevent duplicate usernames and let the user try again.
-
 def reg_user(): 
     """ 
-    The function registers a new user and save them to user.txt.
+    This function registers a new user and saves them to user.txt.
     """
     if current_user != "admin":
         print("Only the admin can register a new user.")
@@ -129,12 +119,10 @@ def reg_user():
         break
 
 # Question 2: Refactor the add-task code into a function called add_task.
-# This function collects task information, validates the username and date,
-# then saves the task into tasks.txt.
-
 def add_task():
     """
-    This finction adds a new task for a valid user.
+    This function collects task information, validates the username and date,
+    then saves the task into tasks.txt.
     """
     task_username = input("Name of person assigned to task: ").strip()
 
@@ -169,10 +157,8 @@ def add_task():
     print("Task successfully added.")
 
 # Question 2: Refactor the view-all code into a function called view_all.
-# This function displays every task in a readable and labelled format.
-
 def view_all():
-    """Display all tasks in a user-friendly format."""
+    """This function displays all tasks in a user-friendly format."""
     if len(task_list) == 0:
         print("There are no tasks available.")
         return
@@ -192,10 +178,8 @@ def view_all():
         print(display)
 
 # Question 4: Create the view_mine function.
-# This function shows only the logged-in user's tasks with numbers,
-# allows the user to choose a task, mark it complete or edit it.
 def view_mine():
-    """Display the current user's tasks and allow editing or completing a task."""
+    """This function is for viewing and editing my tasks."""
     user_task_indexes = []
 
     for index, task in enumerate(task_list, start=1):
@@ -234,7 +218,7 @@ def view_mine():
             selected_task = task_list[task_choice - 1]
 
             action = input(
-                "Enter 'c' to mark the task as complete or 'e' to edit the task: "
+                "Enter 'c' to mark complete or 'e' to edit the task: "
             ).lower()
 
             if action == "c":
@@ -248,38 +232,44 @@ def view_mine():
                     print("This task has already been completed and cannot be edited.")
                     return
 
-                new_username = input("Enter the new username to assign the task to: ").strip()
+                edit_option = input("Enter 'u' to edit username or 'd' to edit due date: ").lower()
 
-                if new_username not in username_password:
-                    print("User does not exist. Task not updated.")
+                if edit_option == "u":
+                    new_username = input("Enter the new username: ").strip()
+
+                    if new_username not in username_password:
+                        print("User does not exist. Task not updated.")
+                        return
+
+                    selected_task["username"] = new_username
+                    save_tasks()
+                    print("Username updated successfully.")
                     return
 
-                while True:
-                    try:
-                        new_due_date = input("Enter the new due date (YYYY-MM-DD): ").strip()
-                        new_due_date = datetime.strptime(new_due_date, DATETIME_STRING_FORMAT)
-                        break
-                    except ValueError:
-                        print("Invalid date format. Please use YYYY-MM-DD.")
+                elif edit_option == "d":
+                    while True:
+                        try:
+                            new_due_date = input("Enter the new due date (YYYY-MM-DD): ").strip()
+                            new_due_date = datetime.strptime(new_due_date, DATETIME_STRING_FORMAT)
+                            selected_task["due_date"] = new_due_date
+                            save_tasks()
+                            print("Due date updated successfully.")
+                            return
+                        except ValueError:
+                            print("Invalid date format. Please use YYYY-MM-DD.")
 
-                selected_task["username"] = new_username
-                selected_task["due_date"] = new_due_date
-                save_tasks()
-                print("Task successfully updated.")
-                return
+                else:
+                    print("Invalid edit option.")
+                    continue
 
             else:
                 print("Invalid option selected.")
         except ValueError:
             print("Please enter a valid number.")
 
-
-# Question 5 and 6: Creating the generate_reports() function and add report generation logic.
-# This function creates task_overview.txt and user_overview.txt with all required totals
-# and percentages in a readable format.
-
+# Question 5 and 6: Created the generate_reports() function and added report generation logic.
 def generate_reports():
-    """Generate task_overview.txt and user_overview.txt."""
+    """This function creates task_overview.txt and user_overview.txt"""
     total_tasks = len(task_list)
     total_completed = 0
     total_incomplete = 0
@@ -370,6 +360,24 @@ while True:
     print("Login Successful!")
     break
 
+# Question 7: Displaying statistics
+def display_statistics():
+    """This function is for displaying statistics in a user-friendly format."""
+    if not os.path.exists("task_overview.txt") or not os.path.exists("user_overview.txt"):
+        generate_reports()
+
+    print("\n================ TASK STATISTICS ================\n")
+    with open("task_overview.txt", "r", encoding="utf-8") as task_overview:
+        for line in task_overview:
+            print(line.strip())
+
+    print("\n================ USER STATISTICS ================\n")
+    with open("user_overview.txt", "r", encoding="utf-8") as user_overview:
+        for line in user_overview:
+            print(line.strip())
+
+    print("\n================================================\n")
+
 #====Main Menu Section====
 while True:
 
@@ -428,14 +436,7 @@ while True:
     # If the files do not exist, they will be generated first.
     elif menu == "ds":
         if current_user == "admin":
-            if not os.path.exists("task_overview.txt") or not os.path.exists("user_overview.txt"):
-                generate_reports()
-
-            with open("task_overview.txt", "r", encoding="utf-8") as task_overview:
-                print("\n" + task_overview.read())
-
-            with open("user_overview.txt", "r", encoding="utf-8") as user_overview:
-                print(user_overview.read())
+            display_statistics()
         else:
             print("Only the admin can display statistics.")
 
@@ -445,4 +446,3 @@ while True:
 
     else:
         print("You have made a wrong choice, Please Try again")
-
