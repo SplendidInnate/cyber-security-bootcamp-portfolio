@@ -1,0 +1,15 @@
+1. A protocol is a set of rules that determine how data is transferred across a network between devices. It ensures that the client and server know how to properly send, receive and interpret messages.
+
+2. It is built on top of the Transmission Control Protocol (TCP).
+
+3. It will be 200s status code
+
+4. A stateless protocol is a communication protocol where each request is independent and the server does not recall any previous requests from the client.
+
+5. It is HTTPS which stands for Hypertext Transfer Protocol Secure. It uses SSL/TLS encryption.
+
+6. If there is a key mismatch, the SSH connection will be terminated and the client will show a warning or error message and code. This occurs as a result of the system being unable to validate the server which may signal a possible security risk.
+
+7. B, C and F
+
+8. You can expect the 403 Forbidden status message.
