@@ -1,0 +1,19 @@
+1. Web 3.0 represents the next stage of internet revolution, often described as the decentralized web. It shifts the internet model toward a read-write-own structure, where users have actual ownership of their data and digital assets through technologies like blockchain and smart contracts. It also empowers users with increased autonomy, efficiency, quality, security and privacy.
+
+Web 1.0 and Web 2.0 differ from Web 3.0 as,
+Web 1.0 was a read-only experience where users consumed flat, static content from information portals with very little interaction.
+
+Web 2.0 has read-write capabilities, making the web interactive and social through platforms like social media. However, it concentrated on data management and profit in the hands of a few large, centralized corporations.
+
+2. Front-end is the part of the application that users see and interact with directly. Its function is to handle the User Interface (UI) and ensure a responsive and dynamic experience. It is built using technologies like HTML, CSS and JavaScript.
+Back-end is the layer that operates behind the scenes, it manages the application's logic, database interactions, and server configurations. It ensures that the correct data is processed and sent to the front end securely.
+
+3. When you type a URL into a browser, there are steps that occur to bring the webpage to your screen:
+
+DNS Lookup: The browser first communicates with a Domain Name System (DNS) server to translate the human-readable URL like google.com into a machine-readable IP address.
+
+Request and Protocol: The browser uses the Hypertext Transfer Protocol (http or https) to send a request to the server at that specific IP address.
+
+Server Processing: The back-end server receives this request, processes it as it fetches the information from a database and sends back the necessary files, usually in the form of HTML, CSS and JavaScript.
+
+Rendering: The browser acts as a client, reading the file and assembling them to the visual page the user sees. It interprets the HTML for structure and the CSS for styling to render the final graphics and text on your display.
