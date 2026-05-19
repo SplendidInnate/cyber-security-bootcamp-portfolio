@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Childhood Hobbies</title>
+
+    <style>
+        /* ── 1. FONT FAMILY ── */
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #2b2b2b;   /* ── 4. BACKGROUND COLOR (body) – charcoal ── */
+            color: #222;
+            line-height: 1.8;
+        }
+
+        /* ── 2. MAIN HEADING (h1) ── */
+        h1 {
+            font-size: 2.4em;
+            color: #ffffff;
+            margin: 0 0 8px 0;           /* ── 7. MARGIN/PADDING ── */
+            letter-spacing: 1px;
+        }
+
+        /* ── 2. SUBHEADINGS (h2) – different size & colour ── */
+        h2 {
+            font-size: 1.6em;
+            color: #1a1a2e;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 6px;         /* ── 7. PADDING ── */
+            margin-top: 30px;
+            margin-bottom: 14px;
+        }
+
+        h3 {
+            font-size: 1.15em;
+            color: #e94560;
+            margin-bottom: 6px;
+        }
+
+        /* ── 3. PARAGRAPH TEXT COLOUR ── */
+        p {
+            color: #333344;
+            font-size: 0.97em;
+            margin: 10px 0 16px 0;       /* ── 7. MARGIN ── */
+            text-align: justify;         /* ── 5. TEXT ALIGNMENT ── */
+        }
+
+        /* ── 5. HEADER TEXT ALIGNMENT ── */
+        header {
+            text-align: center;
+            background-color: #1a1a2e;
+            color: white;
+            padding: 28px 20px;          /* ── 7. PADDING ── */
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+
+        header p {
+            color: #c8cfe0;
+            font-size: 1em;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* ── 8. LINK COLOUR & UNDERLINE ── */
+        nav {
+            margin: 0 0 28px 0;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            margin: 0 18px;
+            text-decoration: none;        /* remove underline */
+            color: #e94560;               /* accent link colour */
+            font-weight: bold;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #1a1a2e;
+            text-decoration: underline;   /* underline on hover */
+        }
+
+        /* ── 4. SECTION BACKGROUND ── */
+        section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 24px 28px;           /* ── 7. PADDING ── */
+            margin-bottom: 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+
+        article {
+            margin-bottom: 28px;
+        }
+
+        figure {
+            margin: 14px 0;
+        }
+
+        img {
+            width: 350px;
+            max-width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #777;
+            margin-top: 6px;
+            font-size: 0.88em;
+        }
+
+        /* ── 6. BOLD & ITALIC emphasis in paragraphs ── */
+        article p em {
+            color: #e94560;
+            font-style: italic;
+        }
+
+        article p strong {
+            color: #1a1a2e;
+        }
+
+        /* ── 4. ASIDE BACKGROUND ── */
+        aside {
+            background-color: #1a1a2e;
+            padding: 18px 22px;
+            border-left: 5px solid #e94560;
+            margin: 10px 0 32px 0;
+            border-radius: 8px;
+        }
+
+        aside h3 {
+            color: #e94560;
+            margin-top: 0;
+        }
+
+        aside p {
+            color: #c8cfe0;
+            margin: 0;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;           /* ── 5. ALIGNMENT ── */
+            margin-top: 40px;
+            padding: 22px;
+            background-color: #1a1a2e;
+            color: white;
+            border-radius: 12px;
+        }
+
+        footer p {
+            color: #c8cfe0;
+            margin: 0 0 8px 0;
+            text-align: center;
+        }
+
+        /* ── 8. FOOTER LINK ── */
+        .back-to-top {
+            display: inline-block;
+            margin-top: 6px;
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+
+        .back-to-top:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="top">
+        <h1>My Childhood Hobbies</h1>
+        <p>A look back at the hobbies and toys I loved as a child.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#toys">Toys</a>
+        <a href="#facts">Fun Facts</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section: Hobbies -->
+        <section id="hobbies">
+            <h2>My Favourite Hobbies</h2>
+
+            <!-- Article 1 -->
+            <article>
+                <h3>Playing PC Games</h3>
+                <p>
+                    I spent almost <strong>every afternoon</strong> playing games such as
+                    <em>ETS 2, GTA, Hitman, and Need for Speed</em>.
+                </p>
+
+                <figure>
+                    <img src="0h2z4gcwqp821.jpg" alt="PC Gaming Setup">
+                    <figcaption>My passion for gaming began here.</figcaption>
+                </figure>
+            </article>
+
+            <!-- Article 2 -->
+            <article>
+                <h3>Car Spotting</h3>
+                <p>
+                    I enjoyed <em>sitting by the road</em> with friends, identifying
+                    <strong>performance cars</strong> by their sound and appearance.
+                </p>
+
+                <figure>
+                    <img src="b793154d2d8f6f54c9759233df995bc7.jpg" alt="Performance Cars">
+                    <figcaption>Watching fast cars was always exciting.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Section: Toys -->
+        <section id="toys">
+            <h2>My Favourite Toys</h2>
+
+            <article>
+                <h3>Toy Cars</h3>
+                <p>
+                    I had a <strong>large collection</strong> of toy cars and built
+                    <em>racing tracks</em> using cardboard boxes.
+                </p>
+
+                <figure>
+                    <img src="iStock-1316414600-scaled.jpg" alt="Toy Cars">
+                    <figcaption>My miniature car collection.</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Toy Guns</h3>
+                <p>
+                    My friends and I played <em>action games</em> in the backyard
+                    for <strong>hours on end</strong>.
+                </p>
+
+                <figure>
+                    <img src="gettyimages-1454268913-612x612.jpg" alt="Kids Playing Outside">
+                    <figcaption>Outdoor adventures with friends.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside id="facts">
+            <h3>Fun Fact</h3>
+            <p>
+                These childhood hobbies helped develop my love for technology,
+                gaming, and automobiles.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Childhood Hobbies</p>
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
+    </footer>
+
+</body>
+</html>
