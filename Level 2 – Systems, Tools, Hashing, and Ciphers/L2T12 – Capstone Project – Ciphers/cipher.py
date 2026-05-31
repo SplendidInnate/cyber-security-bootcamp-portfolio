@@ -34,7 +34,7 @@ def encode_message(message):
             position = ascii_value - ord("A")
             new_position = (position + 15) % 26
             new_ascii = new_position + ord("A")
-            encoded += char
+            encoded += chr(new_ascii)
         
         # Keeping spaces and punctuation unchanged
         else:
