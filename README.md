@@ -5,7 +5,7 @@ Final average: 99%.
 
 This repo documents a progression from foundational security and Python concepts through to applied offensive and defensive security labs including exploiting a real vulnerable host end-to-end, building forensic and database tooling from scratch, and hardening web applications against common attack vectors.
 
-**Skills Demonstrated**
+**Skills Demonstrated:**
 - Penetration Testing:	Nmap, Nessus, Metasploit-style exploitation, privilege escalation, backdoor identification
 - Digital Forensics:	Metadata extraction, evidence handling, custom forensic tooling (Python/Tkinter)
 - Network Security:	Reconnaissance, OSINT (Assetfinder, Wappalyzer, Google dorking), vulnerability scanning
@@ -13,9 +13,8 @@ This repo documents a progression from foundational security and Python concepts
 - Systems & Scripting:	Python, SQLite, Linux (Kali), Windows/Apache server hardening, SSL/TLS configuration
 - Database Security:	Normalisation (1NF–3NF), secure schema design
 
-**Repository Structure**
-
-  **Level 1 — Python Basics for Cybersecurity**
+**Repository Structure:**
+**Level 1 — Python Basics for Cybersecurity**
   Foundational scripting and logic, building the programming base used in later offensive tooling.
 
  **Level 2 — Systems, Tools, Hashing**
@@ -25,15 +24,13 @@ This repo documents a progression from foundational security and Python concepts
   Applied offensive and defensive security labs — penetration testing, database security, digital forensics, 
   OSINT/reconnaissance, vulnerability assessment and more.
 
-**Environment**
-
+**Environment:**
 Labs were completed across a multi-OS environment:
   **Windows** — VS Code, CMD, Apache/SSL configuration
-  **Kali Linux (VirtualBox)** — penetration testing tooling, network lab configuration (NAT Network / Internal Network)
+  **Kali Linux (VirtualBox)** — penetration testing tooling, network lab configuration
   **Ubuntu (VBox)** — Terminal-based scripting, tooling, and lab work
 
-**About This Portfolio**
-
+**About This Portfolio:**
 This repository was completed as part of HyperionDev's Cybersecurity Bootcamp and migrated here with full commit history for portfolio purposes. Each folder contains the original task briefs alongside completed solutions, write-ups, and supporting evidence (screenshots, output logs) where applicable.
 
 **Contant:** 
