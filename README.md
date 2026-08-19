@@ -1,6 +1,7 @@
 # Cyber Security Bootcamp
 
-Hands-on cybersecurity coursework and projects completed through HyperionDev's Cybersecurity Bootcamp, covering penetration testing, digital forensics, network security, secure development, ethical hacking methodology and more. Final average: 99%.
+Hands-on cybersecurity coursework and projects completed through HyperionDev's Cybersecurity Bootcamp, covering penetration testing, digital forensics, network security, secure development, ethical hacking methodology and more. 
+Final average: 99%.
 
 This repo documents a progression from foundational security and Python concepts through to applied offensive and defensive security labs including exploiting a real vulnerable host end-to-end, building forensic and database tooling from scratch, and hardening web applications against common attack vectors.
 
@@ -13,6 +14,7 @@ This repo documents a progression from foundational security and Python concepts
 - Database Security:	Normalisation (1NF–3NF), secure schema design
 
 **Repository Structure**
+
   **Level 1 — Python Basics for Cybersecurity**
   Foundational scripting and logic, building the programming base used in later offensive tooling.
 
@@ -24,12 +26,14 @@ This repo documents a progression from foundational security and Python concepts
   OSINT/reconnaissance, vulnerability assessment and more.
 
 **Environment**
+
 Labs were completed across a multi-OS environment:
   **Windows** — VS Code, CMD, Apache/SSL configuration
   **Kali Linux (VirtualBox)** — penetration testing tooling, network lab configuration (NAT Network / Internal Network)
   **Ubuntu (VBox)** — Terminal-based scripting, tooling, and lab work
 
 **About This Portfolio**
+
 This repository was completed as part of HyperionDev's Cybersecurity Bootcamp and migrated here with full commit history for portfolio purposes. Each folder contains the original task briefs alongside completed solutions, write-ups, and supporting evidence (screenshots, output logs) where applicable.
 
 **Contant:** 
