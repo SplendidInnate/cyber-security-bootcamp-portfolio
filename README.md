@@ -37,6 +37,7 @@ Labs were completed across a multi-OS environment:
 
 This repository was completed as part of HyperionDev's Cybersecurity Bootcamp and migrated here with full commit history for portfolio purposes. Each folder contains the original task briefs alongside completed solutions, write-ups, and supporting evidence (screenshots, output logs) where applicable.
 
-**Contant:** 
-LinkedIn: www.linkedin.com/in/splendid-innate-440622427
-Email: spleinnate@gmail.com
+**Contant:**
+
+- LinkedIn: www.linkedin.com/in/splendid-innate-440622427
+- Email: spleinnate@gmail.com
