@@ -1,6 +1,6 @@
 # Cyber Security Bootcamp
 
-Hands-on cybersecurity coursework and projects completed through HyperionDev's Cybersecurity Bootcamp, covering penetration testing, digital forensics, network security, secure development, ethical hacking methodology and more.
+Hands-on cybersecurity coursework and projects completed through HyperionDev's Cybersecurity Bootcamp which is aligned with the CompTIA Security+, Network+, and CySA+ exams, some of the most widely respected credentials in the industry covering penetration testing, digital forensics, network security, secure development, ethical hacking methodology and more.
 
 Final Bootcamp Average: 99%
 
